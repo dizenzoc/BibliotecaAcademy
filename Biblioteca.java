@@ -48,6 +48,14 @@ public class Biblioteca {
         }
     }
 
+    public void stampaLibriDisponibili()
+    {
+        for (Libro libro : libri) 
+        {
+            System.out.println("ELENCO LIBRI: " + libro.getTitolo());
+            
+        }
+    }
     //verificacredenziali metodo
 
 }
