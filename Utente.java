@@ -24,13 +24,17 @@ public class Utente {
     
     }
 
+    public String getPassword(){
+
+        return this.password;
+
+    }
+
     public String getUsername(){
 
         return this.username;
 
     }
-
-
     
 }
 
