@@ -70,4 +70,9 @@ public class Libro {
         }
 
     }
+
+    public void addLibro()
+    {
+        disponibili++;
+    }
 }

@@ -25,6 +25,7 @@ public class Biblioteca {
     public void restituisciLibro(String titolo){
         for(Libro libro : libri){
             if(libro.getTitolo.equals(titolo.toLowerCase())){
+            if(libro.getTitolo().equals(titolo.toLowerCase())){
                 libro.restituisci();
             }
         }
