@@ -58,7 +58,7 @@ public class Biblioteca {
     {
         for (Libro libro : libri) 
         {
-            System.out.println("Libro: " + libro.getTitolo());
+            System.out.println("Libro: " + libro.getTitolo() + " Autore: " + libro.getAutore() + " Anno: " + libro.getAnno());
             
         }
     }
