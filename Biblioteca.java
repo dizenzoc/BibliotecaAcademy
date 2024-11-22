@@ -63,8 +63,18 @@ public class Biblioteca {
             
         }
     }
-    //verificacredenziali metodo
 
+    //verificacredenziali metodo
+    public Utente verificaCredenziali(String username, String password){
+        for(Utente utente : utenti){
+            if(utente.getUsername().equals(username)){
+                if(password.getPassword().equals(password)){
+                    return utente;
+                }
+            }
+        }
+        return null;
+    }
 }
 
 
