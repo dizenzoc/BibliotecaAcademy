@@ -65,7 +65,7 @@ public class Biblioteca {
 
     //verificacredenziali metodo
     public Utente verificaCredenziali(Utente utente) {
-        for (Utente registrato : utentiRegistrati) {
+        for (Utente registrato : this.utenti) {
             if (registrato.getUsername().equals(utente.getUsername()) && registrato.getPassword().equals(utente.getPassword())) {
                 return registrato;
             }

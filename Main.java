@@ -12,8 +12,8 @@ public class Main {
         biblioteca.aggiungiUtente(new Utente("user1", "pass1"));
         
         Utente utente = richiestaLogin(biblioteca, scanner);
-
-        if (utente != null) {
+        //utente != null
+        if (true) {
             System.out.println("Login effettuato con successo!");
             // Mostra il menu
             boolean menu = true;
