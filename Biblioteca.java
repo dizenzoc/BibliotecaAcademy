@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Biblioteca {
     private ArrayList<Utente> utenti = new ArrayList();
-    private ArrayList<Utente> libri = new ArrayList();
+    private ArrayList<Libro> libri = new ArrayList();
 
 
     public void prestaLibro(String titolo){
@@ -34,6 +34,15 @@ public class Biblioteca {
         for(Libro libro : libri){
             if(libro.getTitolo.equals(titolo.toLowerCase())){
                 libro.rimuovi();
+            }
+        }
+    }
+
+    public void aggiungiUtente(String username, String password){
+        for(Utente utente : utenti){
+            if(utente.getUsername.equals(username)){
+                Utente utente = new Utente(username, password);
+                utenti.add(utente);
             }
         }
     }
