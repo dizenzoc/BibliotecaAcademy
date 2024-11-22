@@ -40,6 +40,15 @@ public class Libro {
         this.anno = anno;
     }
 
+    public int getDisponibili()
+    {
+        return disponibili;
+    }
+
+    public int getPrestati()
+    {
+        return prestati;
+    }
 
     public String getTitolo()
     {
