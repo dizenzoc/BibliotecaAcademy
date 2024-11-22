@@ -18,15 +18,14 @@ public class Biblioteca {
         }
     }
 
-    public void aggiungiLibro(String titolo, String autore, int quantità){
+    public void aggiungiLibro(Libro libro){
         for (Libro l:this.libri){
-            if (l.getTitolo().equalsIgnoreCase(titolo)){
-                l.addLibro(quantità);
+            if (l.getTitolo().equalsIgnoreCase(libro.getTitolo())){
+                l.addLibro(libro.getDisponibili());
                 return;
             }
         }
-        Libro tmp = new Libro(titolo, autore, quantità);
-        this.libri.add(tmp);
+        this.libri.add(libro);
     }
     
     public void restituisciLibro(String titolo){
