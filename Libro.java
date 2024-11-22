@@ -11,7 +11,19 @@ public class Libro {
         this.titolo = titolo;
         this.autore = autore;
         this.anno = anno;
+        this.disponibili = 1;
+        this.prestati = 0;
     }
+
+    public Libro(String titolo, String autore, int anno, int disponibili)
+    {
+        this.titolo = titolo;
+        this.autore = autore;
+        this.anno = anno;
+        this.disponibili = disponibili;
+        this.prestati = 0;
+    }
+
 
     public void setTitolo(String titolo)
     {
