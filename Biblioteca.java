@@ -64,12 +64,10 @@ public class Biblioteca {
     }
 
     //verificacredenziali metodo
-    public Utente verificaCredenziali(String username, String password){
-        for(Utente utente : utenti){
-            if(utente.getUsername().equals(username)){
-                if(utente.getPassword().equals(password)){
-                    return utente;
-                }
+    public Utente verificaCredenziali(Utente utente) {
+        for (Utente registrato : utentiRegistrati) {
+            if (registrato.getUsername().equals(utente.getUsername()) && registrato.getPassword().equals(utente.getPassword())) {
+                return registrato;
             }
         }
         return null;
