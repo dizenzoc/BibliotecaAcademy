@@ -47,11 +47,10 @@ public class Biblioteca {
         }
     }
 
-    public void aggiungiUtente(String username, String password){
+    public void aggiungiUtente(Utente aggiungi){
         for(Utente utente : utenti){
-            if(utente.getUsername().equals(username)){
-                Utente utente = new Utente(username, password);
-                utenti.add(utente);
+            if(aggiungi.getUsername().equals(utente.getUsername())){
+                aggiungi.add(utente);
             }
         }
     }
@@ -69,7 +68,7 @@ public class Biblioteca {
     public Utente verificaCredenziali(String username, String password){
         for(Utente utente : utenti){
             if(utente.getUsername().equals(username)){
-                if(password.getPassword().equals(password)){
+                if(utente.getPassword().equals(password)){
                     return utente;
                 }
             }
