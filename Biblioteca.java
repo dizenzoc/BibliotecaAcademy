@@ -24,7 +24,7 @@ public class Biblioteca {
     
     public void restituisciLibro(String titolo){
         for(Libro libro : libri){
-            if(libro.getTitolo.equals(titolo.toLowerCase())){
+            if(libro.getTitolo().equals(titolo.toLowerCase())){
             if(libro.getTitolo().equals(titolo.toLowerCase())){
                 libro.restituisci();
             }
@@ -33,7 +33,7 @@ public class Biblioteca {
 
     public void rimuoviLibro(String titolo){
         for(Libro libro : libri){
-            if(libro.getTitolo.equals(titolo.toLowerCase())){
+            if(libro.getTitolo().equals(titolo.toLowerCase())){
                 libro.rimuovi();
             }
         }
@@ -41,7 +41,7 @@ public class Biblioteca {
 
     public void aggiungiUtente(String username, String password){
         for(Utente utente : utenti){
-            if(utente.getUsername.equals(username)){
+            if(utente.getUsername().equals(username)){
                 Utente utente = new Utente(username, password);
                 utenti.add(utente);
             }
