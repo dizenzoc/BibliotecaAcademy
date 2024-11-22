@@ -49,7 +49,7 @@ public class Biblioteca {
     public void aggiungiUtente(Utente aggiungi){
         for(Utente utente : utenti){
             if(aggiungi.getUsername().equals(utente.getUsername())){
-                aggiungi.add(utente);
+                utenti.add(aggiungi);
             }
         }
     }
