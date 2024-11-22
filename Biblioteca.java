@@ -41,7 +41,7 @@ public class Biblioteca {
     public void rimuoviLibro(String titolo){
         for(Libro libro : libri){
             if(libro.getTitolo().equals(titolo.toLowerCase())){
-                libro.rimuovi();
+                libro.rimuoviLibro();
             }
         }
     }
