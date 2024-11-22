@@ -137,10 +137,11 @@ public class Main {
         System.out.println("Libro " + titolo + " rimosso.");
     }
 
-    // private static void rimuoviUtente(Biblioteca biblioteca, Scanner scanner) {
-    //     System.out.print("Inserisci l'username dell'utente da rimuovere: ");
-    //     String username = scanner.nextLine();
-    //     // Logica per rimuovere l'utente
-    //     System.out.println("Utente " + username + " rimosso.");
-    // }
+    private static void rimuoviUtente(Biblioteca biblioteca, Scanner scanner) {
+        // System.out.print("Inserisci l'username dell'utente da rimuovere: ");
+        // String username = scanner.nextLine();
+        // // Logica per rimuovere l'utente
+        // System.out.println("Utente " + username + " rimosso.");
+        System.out.println("Presto Disponibile :)");
+    }
 }
