@@ -71,8 +71,13 @@ public class Libro {
 
     }
 
-    public void addLibro()
+    public void addLibro(int quantità)
     {
-        disponibili++;
+        disponibili += quantità;
+    }
+
+    public void rimuoviLibro()
+    {
+        disponibili--;
     }
 }

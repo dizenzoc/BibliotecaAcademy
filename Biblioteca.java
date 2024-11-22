@@ -18,9 +18,16 @@ public class Biblioteca {
         }
     }
 
-    public void aggiungiLibro(String titolo, int quantità){
+    public void aggiungiLibro(String titolo, String autore, int quantità){
+        for (Libro l:this.libri){
+            if (l.getTitolo().equalsIgnoreCase(titolo)){
+                l.addLibro(quantità);
+                return;
+            }
+        }
+        Libro tmp = new Libro(titolo, autore, quantità);
+        this.libri.add(tmp);
     }
-
     
     public void restituisciLibro(String titolo){
         for(Libro libro : libri){
@@ -52,7 +59,7 @@ public class Biblioteca {
     {
         for (Libro libro : libri) 
         {
-            System.out.println("ELENCO LIBRI: " + libro.getTitolo());
+            System.out.println("Libro: " + libro.getTitolo());
             
         }
     }
