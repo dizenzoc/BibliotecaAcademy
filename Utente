@@ -1,0 +1,36 @@
+public class Utente {
+
+    String username;
+    String password;
+
+
+
+    private Utente(String username, String password){
+
+        this.username = username;
+        this.password = password;
+
+    }
+
+    private void setPassword(String newPassword){
+
+        this.password = newPassword;
+    
+    }
+
+    private void setUsername(String newUsername){
+
+        this.username = newUsername;
+    
+    }
+
+    private getUsername(){
+
+        
+        return username;
+
+    }
+
+
+    
+}
